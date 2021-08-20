@@ -22,22 +22,27 @@ function setup() {
   player = new Player(285, playerBase.body.position.y - 153, 50, 180);
  
   //Create Player Archer Object
-  playerArcher = new PlayerArcher(350,200,50,100,)
+  playerArcher = new PlayerArcher(
+    340,
+    playerBase.body.position.y - 180,
+    120,
+    120
+  );
 
-  computerBase = new ComputerBase(
+  computerBase = new ComputerBase (
     width - 300,
     random(450, height - 300),
     180,
     150
 
   );
-  computer = new Computer(
+  computer = new Computer (
     width - 280,
     computerBase.body.position.y - 153,
     50,
     180
   );
-  computerArcher = new ComputerArcher(
+  computerArcher = new ComputerArcher (
     width - 340,
     computerBase.body.position.y - 180,
     120,
@@ -45,7 +50,7 @@ function setup() {
   );
   
   //Create an arrow Object
-  playerArrow = new PlayerArrow(200,100,50,50,20)
+  playerArrow = new PlayerArrow(300,200,50,50,20)
   computerArrow = new ComputerArrow(400,200,50,50,20)
   
 }

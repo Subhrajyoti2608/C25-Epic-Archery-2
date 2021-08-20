@@ -12,6 +12,7 @@ class ComputerArrow {
     this.image = loadImage("./assets/arrow.png");
     World.add(world, this.body);
   }
+
   shoot(archerAngle) {
     var velocity= p5.vector.fromAngle(archerAngle)
     velocity.mult(20)
